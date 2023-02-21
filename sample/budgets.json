@@ -1,0 +1,25 @@
+[
+  {
+    "id": 0,
+    "userID": 0,
+    "name": "Checking Account"
+  },
+
+  {
+    "id": 1,
+    "userID": 0,
+    "name": "Savings Account"
+  },
+
+  {
+    "id": 3,
+    "userID": 1,
+    "name": "Checking Account"
+  },
+
+  {
+    "id": 4,
+    "userID": 1,
+    "name": "Savings Account"
+  }
+]
