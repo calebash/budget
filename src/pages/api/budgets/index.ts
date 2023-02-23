@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import budgets from "../../../sample/budgets.json";
 
 async function getBudgets() {
+  console.log(budgets);
   return true;
 }
 
@@ -13,7 +15,7 @@ export default async function budgetsApi(
   try {
     const response = await getBudgets();
     res.status(200).json({ test: true });
-  } catch (e) {
-    return res.status(400).json({ error: true });
+  } catch (e: any) {
+    return res.status(400).json({ error: true, message: e.toString() });
   }
 }
