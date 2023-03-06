@@ -1,16 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
       <main>
         <h1>Home page</h1>
         <p>Content is in progress!</p>
+        <a href="/user/register">Create account</a>
       </main>
     </>
   );
