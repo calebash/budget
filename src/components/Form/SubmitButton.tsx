@@ -1,3 +1,13 @@
-export default function SubmitButton() {
-  return <div></div>;
+import { MouseEventHandler } from "react";
+
+interface SubmitButtonProps {
+  onClick: MouseEventHandler;
+}
+
+export default function SubmitButton(props: SubmitButtonProps) {
+  return (
+    <button type="submit" onClick={props.onClick}>
+      Submit
+    </button>
+  );
 }
